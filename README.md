@@ -32,7 +32,7 @@ You must include the elements labeled in the image:
 * Ggame comes with a [built in ability to detect collisions 
   between sprites](http://brythonserver.github.io/ggame/#ggame.Sprite.collidingWithSprites), 
   which may be useful. 
-* You can see an [example of the platformer project](http://runpython.com/?user=BrythonServer&repo=Platformer&name=platformer.py)
+* You can see an [example of the platformer project](https://runpython.org/?user=BrythonServer&repo=Platformer&name=platformer.py)
   written using Brython and ggame. Move the mouse and press the 'w' key to create wall blocks (see
   game play instructions above).
 
