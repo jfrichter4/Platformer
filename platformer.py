@@ -10,6 +10,7 @@ from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, El
 
 WW = 1000
 WH = 800
+
 #Colors Set:
 blue = Color(0x2EFEC8, 1.0)
 black = Color(0x000000, 1.0)
@@ -32,12 +33,6 @@ redline = LineStyle(1, red)
 greenline = LineStyle(1, green)
 gridline = LineStyle(1, grey)
 grid=RectangleAsset(30,30,gridline,white)
-windowSurface.fill(white)
-while True:
-    for event in ggame.event.get():
-        if event.type == QUIT:
-            ggame.quit()
-            sys.exit()
 #Dir:
 DL = 'downleft'
 DR = 'downright'
