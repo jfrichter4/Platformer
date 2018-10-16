@@ -7,10 +7,8 @@ Write and submit a program that implements the sandbox platformer game:
 https://github.com/HHS-IntroProgramming/Platformer
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset, ImageAsset, Frame
-
 WW = 1000
 WH = 800
-
 #Colors Set:
 blue = Color(0x2EFEC8, 1.0)
 black = Color(0x000000, 1.0)
@@ -39,11 +37,26 @@ DR = 'downright'
 UL = 'upleft'
 UR = 'upright'
 MS = 4
-
+# Boxes Set
+b1 = RectangleAsset(15, 50, thinline, red)
+boxes = [b1]
 for b in boxes:
+    if DL == True:
+        b[].left -= MS
+        -= MS
+    if DR == True:
+        b[].left += MS
+        += MS
+    if UL == True:
+        b[].left -= MS
+        -= MS
+    if UR == True:
+        b[].left += MS
+        -= MS
+"""
     # Move the character data structure
-    if b['dir'] == DL:
-        b['rect'].left -= MS
+    if b(direction) == DL:
+        b[].left -= MS
         b['rect'].top += MS
     if b['dir'] == DR:
         b['rect'].left += MS
@@ -80,4 +93,4 @@ for b in boxes:
             if b['dir'] == UR:
                 b['dir'] == UL
         ggame.draw.rect(windowSurface, b['color'], b['rect'])
-
+"""
